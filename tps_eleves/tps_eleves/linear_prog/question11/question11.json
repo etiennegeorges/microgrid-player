@@ -1,0 +1,55 @@
+
+//Question 13
+
+
+{
+
+"number_of_time_steps" : 4 ,  //positive integer
+"time_step_duration" : 120 ,    //minutes
+"demand" : [ 1000, 1600 ,800 ,900 ],     // MW
+"local_demand" : [ 50, 25 ,25 ,50 ],     // MW
+"local_solar_power" : [ 350, 0 ,0 ,50 ],     // MW
+"solar_power_selling_price":80,//euro/MWh
+"electricity_tariff":160,//euro/MWh
+
+"battery":
+{
+        "id":0,
+        "power_max_prod":200, //MW
+        "power_max_store":200, //MW
+        "energy_max":300, //MWh
+        "efficiency":0.75 //1MW of store ->0.66MWh stored-> 0.6666MW for prod
+},
+        
+
+"thermal_plants" :
+[
+{
+ "name" : "thf1" ,
+ "proportionnal_cost" : 10.0 , // euros/MWh
+ "production_levels" : [0, 1000] , //MW
+
+ "mandatory_shutdowns" : [
+         {
+         "start_date" : 240,
+         "end_date" : 360
+         }
+         ]
+
+}
+,
+{
+ "name" : "thf2" ,
+ "proportionnal_cost" : 22.0 , // euros/MWh
+  "production_levels" : [0, 550] //MW
+
+}
+,
+{
+ "name" : "thf3" ,
+ "proportionnal_cost" : 50.0 , // euros/MWh
+  "production_levels" : [100, 200]  //MW
+
+}
+]
+}

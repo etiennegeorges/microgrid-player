@@ -1,0 +1,87 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    
+      <meta charset="utf-8">
+      <title>constraints</title>
+      
+      
+        
+          
+        
+        
+          
+        <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-2.0.0.min.js" integrity="sha384-5Y+xuMRAbgBj/2WKUiL8yzV4fBFic1HJPo2hT3pq2IsEzbsJjj8kT2i0b1lZ7C2N" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-widgets-2.0.0.min.js" integrity="sha384-2ltAd1cQhavmLeBEZXGgnna8fjbw+FjvDq9m2dig4+8KVS8JcYFUQaALvLT//qHE" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="https://cdn.bokeh.org/bokeh/release/bokeh-tables-2.0.0.min.js" integrity="sha384-BGyDyuSaiu0cchXHeEcHeNqhBFiLD5nWxahw58BXz2o1yZvZh4DCAMVUBoIrZfUP" crossorigin="anonymous"></script>
+        <script type="text/javascript">
+            Bokeh.set_log_level("info");
+        </script>
+        
+      
+      
+    
+  </head>
+  
+  
+  <body>
+    
+      
+        
+          
+          
+            
+              <div class="bk-root" id="78f83875-ea44-4088-9350-657a4f44cac3" data-root-id="6834"></div>
+            
+          
+        
+      
+      
+        <script type="application/json" id="6925">
+          {"851232f2-bbaa-47de-a363-c2a68d4e6abc":{"roots":{"references":[{"attributes":{},"id":"6843","type":"UnionRenderers"},{"attributes":{},"id":"6835","type":"StringEditor"},{"attributes":{},"id":"6844","type":"Selection"},{"attributes":{"editor":{"id":"6839"},"field":"pi","formatter":{"id":"6840"},"title":"pi"},"id":"6828","type":"TableColumn"},{"attributes":{"children":[{"id":"6832"}]},"id":"6833","type":"WidgetBox"},{"attributes":{"button_type":"success","icon":null,"label":"Download"},"id":"6832","type":"Button"},{"attributes":{},"id":"6836","type":"StringFormatter"},{"attributes":{"editor":{"id":"6837"},"field":"slack","formatter":{"id":"6838"},"title":"slack"},"id":"6827","type":"TableColumn"},{"attributes":{"editor":{"id":"6835"},"field":"constraint name","formatter":{"id":"6836"},"title":"constraint name"},"id":"6826","type":"TableColumn"},{"attributes":{"source":{"id":"6825"}},"id":"6831","type":"CDSView"},{"attributes":{},"id":"6838","type":"StringFormatter"},{"attributes":{},"id":"6839","type":"StringEditor"},{"attributes":{},"id":"6837","type":"StringEditor"},{"attributes":{"children":[{"id":"6830"},{"id":"6833"}]},"id":"6834","type":"Row"},{"attributes":{},"id":"6840","type":"StringFormatter"},{"attributes":{"columns":[{"id":"6826"},{"id":"6827"},{"id":"6828"},{"id":"6829"}],"height":800,"source":{"id":"6825"},"view":{"id":"6831"}},"id":"6830","type":"DataTable"},{"attributes":{},"id":"6841","type":"StringEditor"},{"attributes":{"editor":{"id":"6841"},"field":"rhs","formatter":{"id":"6842"},"title":"rhs"},"id":"6829","type":"TableColumn"},{"attributes":{"data":{"constraint name":["decomposition_turbinage_pompage_0","maj_stock0","balance_0","decomposition_turbinage_pompage_1","maj_stock1","balance_1","decomposition_turbinage_pompage_2","maj_stock2","balance_2","decomposition_turbinage_pompage_3","maj_stock3","balance_3"],"pi":[-20.0,0.0,20.0,-44.0,0.0,44.0,0.0,0.0,0.0,-20.0,0.0,20.0],"rhs":[0,1440000.0,940,0,-0.0,1450,0,-0.0,-75,0,-0.0,740],"slack":[-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0,-0.0]},"selected":{"id":"6844"},"selection_policy":{"id":"6843"}},"id":"6825","type":"ColumnDataSource"},{"attributes":{},"id":"6842","type":"StringFormatter"}],"root_ids":["6834"]},"title":"Bokeh Application","version":"2.0.0"}}
+        </script>
+        <script type="text/javascript">
+          (function() {
+            var fn = function() {
+              Bokeh.safely(function() {
+                (function(root) {
+                  function embed_document(root) {
+                    
+                  var docs_json = document.getElementById('6925').textContent;
+                  var render_items = [{"docid":"851232f2-bbaa-47de-a363-c2a68d4e6abc","root_ids":["6834"],"roots":{"6834":"78f83875-ea44-4088-9350-657a4f44cac3"}}];
+                  root.Bokeh.embed.embed_items(docs_json, render_items);
+                
+                  }
+                  if (root.Bokeh !== undefined) {
+                    embed_document(root);
+                  } else {
+                    var attempts = 0;
+                    var timer = setInterval(function(root) {
+                      if (root.Bokeh !== undefined) {
+                        clearInterval(timer);
+                        embed_document(root);
+                      } else {
+                        attempts++;
+                        if (attempts > 100) {
+                          clearInterval(timer);
+                          console.log("Bokeh: ERROR: Unable to run BokehJS code because BokehJS library is missing");
+                        }
+                      }
+                    }, 10, root)
+                  }
+                })(window);
+              });
+            };
+            if (document.readyState != "loading") fn();
+            else document.addEventListener("DOMContentLoaded", fn);
+          })();
+        </script>
+    
+  </body>
+  
+</html>
