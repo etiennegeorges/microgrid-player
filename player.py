@@ -66,22 +66,22 @@ class Player:
 
 
 
-my_df = pandas.read_csv(os.path.join(os.getcwd(), 'indus_cons_scenarios.csv'), sep=";", decimal=".")
-scenario_data1 = np.array(my_df)
-scenario_data = np.zeros(48)
-for i in range(1, 49):
-	scenario_data[i-1] = scenario_data1[i][3]
-print("Demande :")
-print(scenario_data)
+# my_df = pandas.read_csv(os.path.join(os.getcwd(), 'indus_cons_scenarios.csv'), sep=";", decimal=".")
+# scenario_data1 = np.array(my_df)
+# scenario_data = np.zeros(48)
+# for i in range(1, 49):
+# 	scenario_data[i-1] = scenario_data1[i][3]
+# print("Demande :")
+# print(scenario_data)
+#
+# P = Player()
+# P.set_scenario(scenario_data)
+# P.set_prices(random_lambda)
+# load = P.compute_all_load()
+# print("Sortie :")
+# print(load)
 
-P = Player()
-P.set_scenario(scenario_data)
-P.set_prices(random_lambda)
-load = P.compute_all_load()
-print("Sortie :")
-print(load)
 
-
-# if __name__=="__main__":
-# 	myplayer = Player()
-# 	myload = myplayer.compute_all_load()
+if __name__=="__main__":
+	myplayer = Player()
+	myload = myplayer.compute_all_load()
