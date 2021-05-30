@@ -118,6 +118,6 @@ class Player:
 # print("Sortie :")
 # print(load)
 
-if _name__=="__main_":
+if __name__=="__main_":
 	myplayer = Player()
 	myload = myplayer.compute_all_load()
